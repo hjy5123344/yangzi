@@ -5,7 +5,7 @@ spring:
   application:
     name: consumer
   redis:
-    host: 112.74.29.31
+    host: localhost
     port: 6379
     database: 0
     jedis:
@@ -18,7 +18,7 @@ spring:
     password: 123456
     #消费端配置  手动接收  限流
   rabbitmq:
-    addresses: 112.74.29.31:5672
+    addresses: localhost:5672
     username: guest
     password: guest
     virtual-host: / #连接到rabbitMQ的vhost
